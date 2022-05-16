@@ -1,0 +1,82 @@
+q1:
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner readgrade = new Scanner(System.in);
+
+System.out.println("Enter the grade :");
+int grade = readgrade.nextInt();
+
+if (grade%5 == 4){
+    grade=grade+1;
+        System.out.println(grade);}
+    else
+        if (grade%5 == 3){
+            grade=grade+2;
+        System.out.println(grade);}
+        else
+    System.out.println(grade);
+}
+    }
+	
+	***************************************************************************************
+	q2:
+	public class Main {
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0)
+                System.out.println("Fizz");
+            else if (i % 5 == 0)
+                System.out.println("Buzz");
+            else if (i % 5 == 0 && i % 3 == 0)
+                System.out.println("FizzBuzz");
+            else System.out.println(i);
+        }
+    }
+}
+********************************************************************************************
+q3:
+public class Main {
+    public static void main(String[] args) {
+
+        char [] name={'n','j','o','u','d'};
+        System.out.println(vol(name));
+    }
+    static int vol(char[] name) {
+        int count = 0;
+
+        for (int i = 0; i < name.length; i++) {
+            if (name[i] == 'o' || name[i] == 'u' || name[i] == 'i' || name[i] == 'a') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+}
+********************************************************************************************
+q4:
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner number = new Scanner(System.in);
+        
+        System.out.println("Enter the first number :");
+        int num1 = number.nextInt();
+        System.out.println("Enter the second number:");
+        int num2 = number.nextInt();
+
+        System.out.println("the max number is:"+max(num1, num2));
+    }
+    public static int max(int num1, int num2) {
+        int max = 0;
+
+        if (num1 > num2)
+            max = num1;
+        if (num1 < num2)
+            max = num2;
+
+        return max;
+    }
+}
